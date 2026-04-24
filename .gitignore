@@ -1,0 +1,105 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Local development
+*.log
+.env
+local_settings.py
+
+# API Keys and Secrets
+.secrets
+secrets.json
+*.pem
+*.key
+
+# LLM/ML specific
+.cache/
+models/
+*.ggml
+*.bin
+
+# Streamlit
+.streamlit/
+
+# Project specific
+*.db
+*.sqlite
+*.sqlite3
+data/
+downloads/
+uploads/
+temp/
+tmp/
+
+# IDE temp files
+.vscode-server/
+.vscode-remote/

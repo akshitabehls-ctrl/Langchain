@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-projects"
+version = "1.0.0"
+description = "A collection of LangChain projects and implementations"
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["Langchain Models", "Langchain Prompts"]
