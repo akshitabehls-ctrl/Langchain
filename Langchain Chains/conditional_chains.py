@@ -1,7 +1,11 @@
 from langchain_ollama import ChatOllama
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain.schema.runnable import RunnableParallel
+from langchain.schema.runnable import RunnableParallel, RunnableBranch, RunnableLambda
+from langchain_core.output_parsers import PydanticOutputParser
+from pydantic import BaseModel, Field
+from typing import Literal
+
 
 model = ChatOllama(model ='llama3')
 parser = StrOutputParser()
