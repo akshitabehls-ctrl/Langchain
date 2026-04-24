@@ -1,0 +1,21 @@
+from langchain_ollama import ChatOllama
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
+prompt1 = PromptTemplate(
+    template='Give a detailed report abput {topic}',
+    input_variables =['topic']
+)
+
+prompt2 = PromptTemplate(
+    template='Generate 5 ipointer summary from the following text :\n {text}',
+    input_variables = ['text']
+)
+
+model = ChatOllama(model ='llama3')
+parser = StrOutputParser()
+chain = prompt1 | model | parser | prompt2 | model | parser
+
+result = chain.invoke({'topic':'Underemployemnt in India'})
+print(result)
+chain.get_graph().print_ascii()
