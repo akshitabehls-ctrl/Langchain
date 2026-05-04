@@ -68,7 +68,6 @@ Thumbs.db
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
 
 # Local development
 *.log
